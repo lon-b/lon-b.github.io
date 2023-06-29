@@ -3,11 +3,43 @@
     src: url(./fonts/Poppins-Regular.ttf);
 }
 
-body    {font-family: Poppins;
+header  {
+    display: flex;
+    /*align-items: center; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px); /* blurs background, frosted glass effect */
+    -webkit-backdrop-filter: blur(15px); /* used to give safari the same effect */
+    position: sticky; /* makes the navigation bar stick/follow while scroll,  */
+    top: 0;
+    width: 100%;
+}
+
+body    {
+        font-family: Poppins;
         margin: 0;
         background-image: url(./img/bg.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-attachment: fixed;
         color: white;   
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav li  {
+    display: flex;
+    margin-right: 10px;
+
+}
+
+nav a   {
+    display: flex;
+    color: white;
+
 }
