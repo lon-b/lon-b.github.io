@@ -3,67 +3,62 @@
     src: url(./fonts/Poppins-Regular.ttf);
 }
 
-header  {
+body {
+    font-family: Poppins;
+    margin: 0;
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
     display: flex;
-    /*align-items: center; */
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(15px); /* blurs background, frosted glass effect */
-    -webkit-backdrop-filter: blur(15px); /* used to give safari the same effect */
-    position: sticky; /* makes the navigation bar stick/follow while scroll,  */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    position: sticky;
     top: 0;
     width: 100%;
     margin-bottom: 35px;
     z-index: 100;
 }
 
-body    {
-        font-family: Poppins;
-        margin: 0;
-        background-image: url(./img/bg.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        color: white;   
-}
-
-nav ul {
+.navbar {
     display: flex;
     align-items: center;
-    list-style: none;
 }
 
-nav li  {
-    display: flex;
+.navbar-left {
     margin-right: 10px;
-
 }
 
-nav a   {
-    text-decoration: none;
-    color: white;
-
+.navbar-middle ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.welcome-section {
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(15px); 
-    -webkit-backdrop-filter: blur(15px);
-    border-radius: 10px;
-    width: 500px;
-    
+.navbar-middle li {
+    margin-right: 10px;
 }
 
-.peepositwave   {
-    width: 100px;
+.navbaricon {
+    width: 45px;
 }
 
+.welcome-section,
 .something-section {
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(15px); 
+    backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-radius: 10px;
-    width: 500px;
-    
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
 }
