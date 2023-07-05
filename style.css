@@ -60,7 +60,7 @@ header {
 .welcome-section,
 .aboutme-section,
 .contact-section,
-.something-section {
+.gvdabout-section {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
